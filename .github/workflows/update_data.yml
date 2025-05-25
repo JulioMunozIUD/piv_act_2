@@ -19,23 +19,19 @@ jobs:
         with:
           python-version: '3.9.2'
 
-      - name: Paso 3 - Crear entorno virtual
-        run: python -m venv venv
-
-      - name: Paso 4 - Activar entorno virtual
-        run: ./venv/Scripts/activate
-
-      - name: Paso 5 - Actualizar pip
+      - name: Paso 3 - Actualizar pip
         run: pip install --upgrade pip
 
-      - name: Paso 6 - Instalar dependencias
+      - name: Paso 4 - Instalar dependencias
         run: pip install -e .
 
-      - name: Paso 7 - Ejecutar script principal
+      - name: Paso 5 - Ejecutar script principal
         run: python main.py
 
-      - name: Paso 8 - Commit y Push de archivos generados
+      - name: Paso 6 - Commit y Push de archivos generados
         uses: stefanzweifel/git-auto-commit-action@v5
+
+    
         with:
           commit_message: |
              Datos actualizados: histórico, enriquecido, modelo y métricas generados automáticamente
