@@ -23,7 +23,9 @@ Este proyecto esta orientado a automatizar la recolección continua de datos his
 │ └── workflows/
 │ └── update_data.yml
 ├── docs/
-│ └── report_entrega1y2
+│ ├── guion_enlace_video.pdf
+│ └── reporte_final.pdf
+│
 ├── src/
 │ ├── static/
 │ │ ├── dashboard/
@@ -45,3 +47,28 @@ Este proyecto esta orientado a automatizar la recolección continua de datos his
 └── main.py
 
 ```
+## Uso del proyecto
+
+* Recolectar datos históricos: python collector.py 
+* Enriquecer con KPIs financieros: python enricher.py
+* Entrenar modelo y predecir el precio de cierre: python modeller.py
+* Visualizar resultados en un dashboard interactivo: dashboard.pbit
+
+## Automatización con GitHub Actions
+
+El archivo .github/workflows/main.yml automatiza todo el flujo con cada push al branch main. Las acciones incluyen:
+
+* Clonar el repositorio
+* Crear entorno virtual y configurar Python 3.9.2
+* Instalar dependencias del proyecto
+* Ejecutar los scripts: collector.py, enricher.py, modeller.py
+* Hacer commit automático de los resultados generados (CSV, DB, model.pkl)
+* Esto permite mantener actualizado el repositorio con nuevos datos y modelos cada vez que se realicen cambios en el código.
+
+## Referencias y documentación
+
+* Yahoo Finance API (via yfinance): [text](https://github.com/ranaroussi/yfinance)
+* Scikit-learn: Modelos de regresión:[text](https://scikit-learn.org/stable/supervised_learning.html)
+* GitHub Actions: [text](https://docs.github.com/en/actions)
+* Documentación Python 3: [text](https://docs.python.org/3)
+* Documentación GitHub: [text](https://docs.github.com/)
