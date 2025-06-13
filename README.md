@@ -67,8 +67,8 @@ El archivo .github/workflows/main.yml automatiza todo el flujo con cada push al 
 
 ## Referencias y documentación
 
-* Yahoo Finance API (via yfinance): [text](https://github.com/ranaroussi/yfinance)
-* Scikit-learn: Modelos de regresión:[text](https://scikit-learn.org/stable/supervised_learning.html)
-* GitHub Actions: [text](https://docs.github.com/en/actions)
-* Documentación Python 3: [text](https://docs.python.org/3)
-* Documentación GitHub: [text](https://docs.github.com/)
+* [Yahoo Finance API (via yfinance)](https://github.com/ranaroussi/yfinance)
+* [Scikit-learn: Modelos de regresión](https://scikit-learn.org/stable/supervised_learning.html)
+* [GitHub Actions](https://docs.github.com/en/actions)
+* [Documentación Python 3](https://docs.python.org/3)
+* [Documentación GitHub](https://docs.github.com/)
